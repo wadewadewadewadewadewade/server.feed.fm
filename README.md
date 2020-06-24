@@ -2,7 +2,7 @@
 
 I used the code in `procedure.sql` to create a stored procedure in my local MySQL DB.
 
-I did this because MySQL caches stored procedures, and this SQL didn't seem too complex logically so the downside of MySQL reportedly not being particularly strong with logical code should be avoided. (General MySQL stored procedure pros/cons)[https://www.mysqltutorial.org/introduction-to-sql-stored-procedures.aspx/]
+I did this because MySQL caches stored procedures, and this SQL didn't seem too complex logically so the downside of MySQL reportedly not being particularly strong with logical code should be avoided. [General MySQL stored procedure pros/cons](https://www.mysqltutorial.org/introduction-to-sql-stored-procedures.aspx/)
 
 ```
   DELIMITER //
