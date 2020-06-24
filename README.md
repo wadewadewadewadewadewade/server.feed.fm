@@ -1,4 +1,4 @@
-# The Node.js//Express interface to teh get Widget By Tag database code
+# The Node.js//Express interface to the get Widget By Tag database code
 
 I used the code in `procedure.sql` to create a stored procedure in my local MySQL DB.
 
