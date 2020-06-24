@@ -5,7 +5,6 @@ I used the code in `procedure.sql` to create a stored procedure in my local MySQ
 I did this because MySQL caches stored procedures, and this SQL didn't seem too complex logically so the downside of MySQL reportedly not being particularly strong with logical code should be avoided. (General MySQL stored procedure pros/cons)[https://www.mysqltutorial.org/introduction-to-sql-stored-procedures.aspx/]
 
 ```
-{
   DELIMITER //
   CREATE PROCEDURE findWidgetsWithTag(
     IN tagName VARCHAR(64),
@@ -47,7 +46,6 @@ I did this because MySQL caches stored procedures, and this SQL didn't seem too 
     LIMIT offset, max;
   END //
   DELIMITER ;
-}
 ``` 
 
 Also, so save on network traffic, I joined all of the tag and dongle names into a string on each 'widget' object that the DB returns, and converts those into arrays in the express instance to avoid server back and fourth. I'll probably change that tho because it seems hack-y
